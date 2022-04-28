@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--waiting: #EBB91D;
+	--cancelled: #DB1E1E;
+	--start: #2DC52E;
+}
+h1{
+	font-size: 1.2rem;
+	text-align: center;
+}
+main{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cards .card.start {
+	border-color: var(--start);
+}
+
+.cards .card.waiting {
+	border-color: var(--waiting);
+}
+
+.cards .card.cancelled {
+	border-color: var(--cancelled);
+}
+.cards .card.start .status span {
+	color: var(--start)
+}
+.cards .card.waiting .status span {
+	color: var(--waiting)
+}
+.cards .card.cancelled .status span {
+	color: var(--cancelled)
+}
+.cards .card {
+	border: 1px solid;
+	border-radius: .3rem;
+	min-width: calc(100% - 2rem);
+	margin: 1rem;
+}
+
+.cards .card h3 {
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1.5rem 0
+}
+
+.cards .card ul {
+	list-style: none;
+	margin: 0;
+}
+
+.cards .card ul li {
+	margin-bottom: .5rem;
+}
+.cards .card ul li .check-tp{
+	background: var(--start);
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: .3rem;
+	padding: .1rem;
+}
+.cards .card .status{
+	text-align: center;
+}
+.cards .card .price {
+	font-weight: 600;
+}
