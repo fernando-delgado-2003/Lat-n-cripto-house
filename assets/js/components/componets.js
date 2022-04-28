@@ -1,10 +1,8 @@
-//Si esta logueado es vip
-function verifyVip (){
-	console.log("h")
-}
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+
+
 function startFirebase (){
-	import { } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js"
-	  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
 	  const firebaseConfig = {
 	    apiKey: "AIzaSyAsiHiMM67vEopm-FpXH4gYfnjCKKBwE5I",
 	    authDomain: "latin-cripto-house.firebaseapp.com",
@@ -16,5 +14,7 @@ function startFirebase (){
 	
 	  // Initialize Firebase
 	  const app = initializeApp(firebaseConfig);
+	  return app;
 }
-export { verifyVip }
+
+export { startFirebase}
